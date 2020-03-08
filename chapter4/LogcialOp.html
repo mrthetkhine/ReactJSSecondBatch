@@ -1,0 +1,21 @@
+<html>
+    <script>
+        var a = {};
+        var b = "Something";
+        var falsethy = null;
+
+        console.log("a && b >> ", a && b);
+        console.log("falsethy && b >> ", falsethy && b);
+
+        console.log("a || b >> ", a || b);
+        console.log("falsethy || b >> ", falsethy || b);
+
+        var myVar;
+        myVar = myVar || "SomeValue";
+        window.MyModule = {};
+
+        window.MyModule  = window.MyModule || {};
+
+        console.log("MyVar ",myVar);
+    </script>
+</html>

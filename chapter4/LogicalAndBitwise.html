@@ -1,0 +1,28 @@
+<html>
+    <script>
+        var a = 2;
+        var b = 3;
+        console.log("A is ", a.toString(2));
+        console.log("B is ", b.toString(2));
+        console.log("a & b is ", (a&b).toString(2));
+
+        function getTrue()
+        {
+            console.log("Get True");
+            return true;
+        }
+        function getFalse()
+        {
+            console.log("Get False");
+            return false;
+        }
+
+        console.log("True & False ", getTrue()& getFalse());
+        console.log("True | False ", getTrue()| getFalse());
+
+        console.log("True &&False ", getTrue()&& getFalse());
+        console.log("False && False ", getFalse()&& getFalse());
+        console.log("True | False ", getTrue()||getFalse());
+
+    </script>
+</html>
