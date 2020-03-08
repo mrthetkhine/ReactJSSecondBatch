@@ -1,0 +1,25 @@
+<html>
+    <div id='hello'></div>
+    <script>
+        var a = 20;
+        var b = a;
+        a ++ ;
+        console.log("B ",b);
+
+        var x = {
+            age : 20
+        };
+        var y = x;
+        y.age ++;
+        console.log("y ",y);
+        var c = y.age;
+        c++;
+        console.log("x ",x.age);
+        y = {
+            age : 35
+        }
+        y.age ++;
+        console.log("x ",x.age);
+        console.log("y ",y);
+    </script>
+</html>

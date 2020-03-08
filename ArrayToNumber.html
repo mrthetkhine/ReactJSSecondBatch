@@ -1,0 +1,15 @@
+<html>
+    <script>
+        var arr = [10];
+        console.log(+arr);
+        function demo(a)
+        {
+            console.log("A is ",a);
+        }
+        demo.valueOf = function()
+        {
+            return 4;
+        }
+        console.log(3+demo);
+    </script>
+</html>

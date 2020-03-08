@@ -1,0 +1,34 @@
+<html>
+    <script>
+        var a = 2;
+        var b = '4';
+        var obj = {
+            
+            valueOf: function()
+            {
+                console.log("Value of run");
+                return 4;
+            },
+            toString : function(){
+                console.log("toString  run");
+                return 4;
+            }
+        };
+        var func = function ()
+        {
+
+        }
+        var arr = [10,2];
+        var result = b + obj;
+
+        var obj2 = {
+            valueOf:function()
+            {
+                console.log("Obj2 value of run");
+                return 3;
+            },
+        }
+        console.log("Result ", result , " : ",typeof result);
+        console.log("obj.toString ", obj2.toString());
+    </script>
+</html>
