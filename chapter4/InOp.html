@@ -1,0 +1,35 @@
+<html>
+    <script>
+       var obj = {
+           name : 'Tk',
+           age : 34,
+           hello : function()
+           {
+               console.log("Hello");
+           }
+       }
+       var prop = "age1";
+       console.log("name in obj", "name" in obj);
+       console.log("prop in obj ", prop in obj);
+
+       var arr = [10,undefined, , ,20,30];
+       console.log("1 in arr ", 1 in arr);
+       console.log("Arr[0] ", arr["0"]);
+
+       for(var key in arr)
+       {
+           console.log("Key ",key, ' Value ',arr[key]);
+       }
+       for(var i=0;i< arr.length;i++)
+       {
+           console.log("var arr ",arr[i]);
+       }
+       for(var v in obj)
+       {
+           if(typeof obj[v] == 'function')
+           {
+               console.log("obj[v] ",obj[v]);
+           }
+       }
+    </script>
+</html>

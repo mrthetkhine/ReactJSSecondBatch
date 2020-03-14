@@ -1,0 +1,24 @@
+<html>
+    <script>
+       
+
+        function hello()
+        {
+            console.log("Hello");
+        }
+        hello.toString = function()
+        {
+            return "4";
+        }
+        console.log("hello.toString" ,hello.toString());
+        console.log("typeof hello.toString" ,typeof hello.toString());
+
+        var obj = {
+            valueOf: function()
+            {
+                return hello;
+            }
+        };
+        console.log( hello > 3);
+    </script>
+</html>
