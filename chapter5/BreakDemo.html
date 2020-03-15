@@ -1,0 +1,21 @@
+<html>
+    
+    </body>
+    <script>
+       
+       outerLoop:for(var i=0 ; i < 5;i++)
+       {
+           console.log("I is ",i);
+           for(var j=0; j < 4;j++)
+           {
+                if( i==  3)
+                {
+                    break outerLoop;
+                }
+           }
+           console.log('End of j');
+           
+       }
+       console.log('End of loop ',i);
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    
+   
+    <script>
+       
+       function div(left,right)
+       {
+            if( left == 0 && right ==0)
+            {
+                throw 'Invalid operation';
+            }
+           return left/right;
+       }
+       
+       try
+       {
+        console.log('Result ',div(2,0.0));
+        console.log('Result ',div(0.0,1));
+        //console.log('Result ',div(0,0));
+       }
+       catch(e)
+       {
+           console.log('Error ',e);
+       }
+       finally
+       {
+           console.log('Ok At all');
+       }
+      
+       console.log('End of operation');
+    </script>
+</html>

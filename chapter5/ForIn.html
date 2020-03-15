@@ -1,0 +1,46 @@
+<html>
+   
+    <script>
+       
+       var arr = [1, , , ,3,4,5];
+       for(var i=0, len = arr.length; i < len ; i++)
+       {
+           console.log('>>Arr ', arr[i]);
+       }
+       var obj = {
+           name : 'Tk',
+           age : 34,
+       }
+       for(var i in arr)
+       {
+           console.log("Arr ",i);
+           i = i+1;
+       }
+       console.log('Arr ',arr.length , ' arr ',arr);
+
+       for(var prop in obj)
+       {
+           console.log('Prop ',prop, ' Value ',obj[prop]);
+       }
+       obj.valueOf = function()
+           {
+               console.log('Value of');
+               return false;
+           }
+        obj.toString = function()   
+        {
+            console.log('To String');
+            return false;
+        }
+        console.log('!! obj ', +obj);   
+        /*   
+       for( ; !!obj ; )
+       {
+           console.log('For loop');
+           obj.valueOf = function()
+           {
+               return false;
+           }
+       }*/
+    </script>
+</html>

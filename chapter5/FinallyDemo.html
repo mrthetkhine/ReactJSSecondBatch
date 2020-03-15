@@ -1,0 +1,28 @@
+<html>
+    
+   
+    <script>
+       function getMe()
+       {
+           try{
+            throw "Woo Error";
+            //return 4;
+           }
+           catch(e)
+           {
+               //return 10;
+               throw "Woo Woo";
+           } 
+           finally
+           {
+                //throw "Woo Error";
+               return 100;
+
+           }
+
+       }
+       var a = getMe();
+       console.log('A ',a);
+       
+    </script>
+</html>
